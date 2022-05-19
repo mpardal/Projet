@@ -1,0 +1,150 @@
+<header>
+    <h1>Mon site</h1>
+</header>
+<nav role="navigation">
+    <ul>
+      <li><a href="#">Ma présentation</a></li>
+      <li><a href="#">Mes projets</a></li>
+      <li><a href="#">Me contacter</a></li>
+    </ul>
+</nav>
+<main>
+    <section>  
+      <article>
+      <h2>Mon site personnel</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Erabitur fringilla nisi neque, non commodo diam tincidunt quis.
+          Donec a nibh sed ipsum fermentum vehicula vel ac lectus. 
+          Nulla congue feugiat tellus, ut imperdiet enim elementum a. 
+          Sed sed odio eu nibh gravida ultrices.
+        </p>
+      </article>
+      <article>
+        <h2>Mon parcours</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Curabitur fringilla nisi neque, non commodo diam tincidunt quis.
+          Donec a nibh sed ipsum fermentum vehicula vel ac lectus. 
+          Nulla congue feugiat tellus, ut imperdiet enim elementum a. 
+          Sed sed odio eu nibh gravida ultrices.
+        </p>
+      </article>
+    </section>
+</main>
+<aside>
+    <article>
+      <h2>Qui suis-je ?</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <h3>Mes passions</h3>
+        <ul>
+          <li>Les chats</li>
+          <li>Le sport</li>
+          <li>La musique</li>
+        </ul>
+      </p>
+    </article>
+</aside>
+
+.art1:hover {
+  grid-area: art1;
+  z-index: 4;
+}
+
+.art2:hover {
+  grid-area: art2;
+}
+
+.art3:hover {
+  grid-area: art3;
+}
+
+.art4:hover {
+  grid-area: art4;
+}
+
+.art5:hover {
+  grid-area: art5;
+}
+
+.art6:hover {
+  grid-area: art6;
+}
+
+.art7:hover {
+  zoom: 110%;
+}
+
+
+display: grid;
+grid-template-columns: 20% 80%;
+grid-template-rows: 90% 10%;
+grid-template-areas: 
+"photo title";
+
+
+
+
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(171, 171, 171);
+  margin: 0;
+}
+
+.header {
+
+}
+
+.ma-photo {
+  grid-area: photo;
+  float: left;
+  width: 250px;
+  height: 250px;
+}
+
+.title, .subtitle {
+  text-align: center;
+  color: rgb(2, 2, 61);
+}
+
+.title {
+  grid-area: title;
+  font-size: 75px;
+}
+
+.subtitle {
+  grid-area: subtitle;
+  padding-bottom: 50px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  "aside article"
+}
+
+.aside {
+  width: 40%;
+  grid-area: aside;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5%;
+}
+
+.article {
+  grid-area: article;
+}
+
+.aside, .footer {
+  background-color: #484f6d;
+}
+
